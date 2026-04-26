@@ -4,7 +4,11 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
-  onAuthStateChanged
+  onAuthStateChanged,
+  GoogleAuthProvider,
+  signInWithPopup,
+  RecaptchaVerifier,
+  signInWithPhoneNumber
 } from 'firebase/auth';
 import { 
   getFirestore,
@@ -37,12 +41,18 @@ export const auth = getAuth(app);
 // Initialize Firestore
 export const db = getFirestore(app);
 
+// Google Provider
+export const googleProvider = new GoogleAuthProvider();
+
 // Export auth functions
 export {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
-  onAuthStateChanged
+  onAuthStateChanged,
+  signInWithPopup,
+  RecaptchaVerifier,
+  signInWithPhoneNumber
 };
 
 // Export Firestore functions

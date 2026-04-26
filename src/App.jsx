@@ -591,6 +591,17 @@ const FinanceApp = () => {
       <div className="min-h-screen bg-black relative overflow-hidden flex items-center justify-center px-4" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
         <style>{`
           @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
-          .premium-glow { position: fixed; border-radius: 50%; filter: blur(80px); opacity: 0.4; pointer-events: none; }
-          .glow-1 { width: 500px; height: 500px; background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%); top: -200px; right: -100px; animation: float 20s ease-in-out infinite; }
-          .glow-2 { width: 400px; height: 400px; background: linear-gradient(135deg, #0891b2 0%, #10b981 100%); bottom: -150px; left: -50
+          .premium-glow {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            pointer-events: none;
+          }
+          .glow-1 {
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%);
+            top: -200px;
+            right: -100px;
+            animation: float 20s ease-in-out infinit
